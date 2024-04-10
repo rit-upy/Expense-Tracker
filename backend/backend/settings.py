@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts',
     'expenses',
+    'income',
+    'budgets',
     'rest_framework',
     'rest_framework.authtoken'
 ]
@@ -131,9 +133,9 @@ REST_FRAMEWORK = {
                'rest_framework.authentication.TokenAuthentication',
 
     ),
-    'DEFAULT_PERMISSION_CLASSES':(
-                'rest_framework.permissions.IsAuthenticated',
-    ),
+    # 'DEFAULT_PERMISSION_CLASSES':(
+    #             'rest_framework.permissions.IsAuthenticated',
+    # ),
 
 }
 AUTHENTICATION_BACKENDS = [

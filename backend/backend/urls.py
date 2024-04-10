@@ -23,5 +23,7 @@ urlpatterns = [
     path('api/accounts/',include('accounts.urls')),
     
     path('api-auth/', include('rest_framework.urls')), 
-    path('api/expenses/', include('expenses.urls'))
+    path('api/expenses/', include('expenses.urls')),
+    path('api/budgets/',include('budgets.urls')),
+    path('api/incomes/', include('income.urls'))
 ]

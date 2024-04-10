@@ -26,6 +26,7 @@ class Logout(APIView):
     
 class SignUpAPIView(APIView):
     def post(self, request, format=None):
+        print(request.data)
         serializer = UserSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
